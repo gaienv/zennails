@@ -6,97 +6,102 @@
         'contact' => '+1 602-237-2252',
         'hours' => '<strong>Monday - Saturday:</strong>&nbsp;9:30 AM - 7:00 PM<br><strong>Sunday:</strong>&nbsp;10:00 AM - 5:00 PM</p><p>
         ',
-        'booking' => '',
+        'booking' => 'tel:+1 602-237-2252',
         'facebook' => 'https://www.facebook.com/p/Zen-nails-Laveen-100063804900130/',
         'google' => 'https://share.google/48wx2njqi2h5ZiJDp',
         'instagram' => 'https://www.instagram.com/zen_nails_laveen',
     ];
 
     $services = [
-        // 'PEDICURE' => [
-        //     'pedi',
-        //     "",
-        //     'Menu' => [
-        //         'Herbal Luxury Spa Pedicure' => ['$48', 'Massage (12 mins) GEL/Shellac Polish (Extra) $15 Includes relaxing foot soaks in warm water, cuticle care & callus remote. Next, you get an Herbal scrub of your choice. Which gently exfoliates, removes dead skin cells & allows the skin to breathe. Plus natural Herbal mask of your choice, warm fragrant essential oil, hot stone massage & paraffin treatment, because you deserve it.  '],
-        //         'Detox Volcano Spa Pedicure' => ['$68', 'Massage (15 mins) GEL/Shellac Polish (Extra) $15 Includes relaxing foot soaks in warm water. cuticle care & callus remote. Next, you get a VOLCANO scrub of your choice, which gently exfoliates, removes dead skin cells & allows the skin to breathe. Followed by VOLCANO mask of your choke, hot stone hot towel wrap on both legs & feet. longer massage with VOLCANO lotion color, fresh oranges & hot stones massage. This pedicure soothes, regenerates & softens skin. Added Collagen: 1. DETOX VOLCANO CRYSTALS 2. DETOX VOLCANO ACTIVATOR 3. EXFOLIATING SUGAR SCRUB 4. COLLAGEN CREAM MASK 5. COLLAGEN MASSAGE LOTION'],
-        //         'Detox Volcano Luxury Spa Pedicure' => ['$88', 'Massage ( 25 mins) GEL/Shellac Polish (Extra) $15 Includes relaxing foot soaks in warm water. cuticle care & callus real. Next, you get an llerbal scrub of your choice, which gently exfoliates, re es dead skin cells & allows the skin to breathe. Plus natural VOLCANO mask of your choice, warm fragrant essential oil, hot stone massage & paraffin treatment, because you deserve it SANITIZING WIPE & DISPOSABLE KIT INCLUDED 10 STEP SYSTEM 1-2: CBD DETOX VOLCANO CRYSTALS & ACTIVATOR WITH BUBBLING & FIZZING 3: CBD EXFOLIATING SUGAR SCRUB 4: CBD COLLAGEN CREAM MASK 5: CBD COLLAGEN MASSAGE LOTION 6-10: DISPOSABLE SANITIZING WIPE, SPA LINER, BUFFER, PUMICE & NAIL FILE '],
-        //         'Deluxe Spa Pedicure' => ['$38', 'Massage (8 mins) GEL/Shellac Polish (Extra) $15 Includes relaxing foot soaks in warm water, cuticle care, callus removal. Herbal scrub of your choice, which gently exfoliates, fresh oranges removes dead skin cells & allows the skin to breathe. Finished with a hot stone massage with warm towels.   '],
-        //         'Basic Spa Pedicure' => ['$28', 'Massage (5 mins) GEL/Shellac Polish (Extra) $15 Gently soak, cuticles clean, sugars, massage hot stone.'],
-        //         'Shading' => ['$28', ''],
-        //     ],
-        //     'images'=>['pedi.jpg']
-        // ],
-        // 'MANICURE' => [
-        //     'mani',
-        //     "",
-        //     'Menu' => [
-        //         'ADD ON Paraffin' => ['$10', '',],
-        //         'ADD ON Callus Remove' => ['$7', '',],
-        //         'ADD ON Gel/Regular French' => ['$7', '',],
-        //         'Luxury Spa Manicure + Healthy Detox (With Gel $58)' => ['$45', '',],
-        //         'Herbal Spa Manicure + Package Skin Cell Wrap (With Gel $48) ' => ['$35', '',],
-        //         'Deluxe Manicure (With Gel $38)' => ['$25', '',],
-        //         'Mini Manicure' => ['$20', '',],
-        //         'Gel Manicure' => ['$35', '',],
-
-        //     ],
-        //     'images'=>['mani.jpg']
-        // ],
-        'EYELASH EXTENSIONS' => [
-            'eyelash-extension',
-            'Enhance your natural beauty with our eyelash extension services. Choose from various styles to achieve the look you desire.',
+        'PEDICURES' => [
+            'pedi',
+            "",
             'Menu' => [
-                'Glamour Volume Set' => ['$120', 'A glamorous set of voluminous eyelash extensions for a bold look.'],
-                'Natural Classic Set' => ['$80', 'A classic set of eyelash extensions for a natural and subtle enhancement.'],
-                'Lash Refill (45 Mins)' => ['$50', 'Maintenance refill to keep your lashes looking fresh.'],
+                'Basic Pedicure' => ['$28', ''],
+                'Add Gel Polish On Toenails' => ['$15', ''],
+                'Gel Polish Change' => ['$25', ''],
+                'Polish Change' => ['$15', ''],
+                'Polish Change French Tips' => ['$21', ''],
+                'Gel Polish Take Off Only' => ['$8', ''],
             ],
-            'images' => ['eye-ext.jpg']
+            'images'=>['pedi.jpg']
         ],
-        'ADD-ON LASH SERVICES' => [
-            'additional',
-            'Explore our additional lash services designed to maintain and enhance your eyelash beauty.',
+        'MANICURE' => [
+            'mani',
+            "",
             'Menu' => [
-                'Lash Tinting' => ['$20', 'Enhance your lashes with a tint for a darker and more defined look.'],
-                'Lash Lift' => ['$40', 'Lift and curl your natural lashes for a wide-eyed and awake appearance.'],
+                'Basic Manicure' => ['$25', '',],
+                'Gel Manicure' => ['$35', '',],
+                'Polish Change' => ['$12', '',],
+                'Gel Polish Change' => ['$25', '',],
+                'Gel Polish Take Off' => ['$10', '',],
             ],
-            'images' => ['touchlash.jpg']
+            'images'=>['mani.jpg']
         ],
-        'PERMANENT MAKEUP' => [
-            'makeup',
-            'Discover the convenience of permanent makeup. Wake up with makeup every day!',
+        'FILLS' => [
+            'fill',
+            "Same Price for Regular or Gel Polish",
             'Menu' => [
-                'Brow Microblading' => ['$200', 'Sculpt your brows with microblading for a natural and defined look.'],
-                'Lip Blush' => ['$150', 'Add a touch of color to your lips with our lip blush service.'],
-                'Eyeliner Tattoo' => ['$180', 'Define your eyes with permanent eyeliner tattooing.'],
+                'Regular' => ['$40+', '',],
+                'Special Shapes' => ['$40+', '',],
+                'White Tips' => ['$40+', '',],
+                'Regular With Pink Powder' => ['$40+', '',],
+                'Back Fill' => ['$55+', '',],
+                'Ombre Pink Fill' => ['$40+', '',],
+                'Ombre Pink with Special Shapes' => ['$45+', '',],
+                'Repair Each Nail' => ['$5+', '',],
             ],
-            'images' => ['makeup.jpg']
+            'images'=>['fills.jpg']
         ],
-        // ... Repeat the structure for other services
-        'HAIR REMOVAL' => [
-            'Removal',
-            'Achieve smooth, hair-free skin with our hair removal services covering various areas of the body.',
-            'Menu' => [
-                '<b>Hair Removal</b>' => ['Single Treatment &nbsp;&nbsp;&nbsp; Package of 6', ''],
-                'Upper Lip' => ['$25 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $120', ''],
-                'Chin' => ['$30 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $150', ''],
-                'Face' => ['$50 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $250', ''],
-                'Underarms' => ['$40 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $200', ''],
-                'Forearms' => ['$60 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $300', ''],
-                'Full Arms' => ['$100 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $500', ''],
-                'Back' => ['$80 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $400', ''],
-                'Bikini' => ['$50 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $250', ''],
-                'Lower Legs' => ['$70 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $350', ''],
-                'Full Legs' => ['$120 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $600', ''],
-                'Leg Vein Clearance' => ['Single Treatment &nbsp;&nbsp;&nbsp; Series of 2', ''],
-                '🦵' => ['$60 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $150', ''],
-                'Pigmented Lesions' => ['Single Treatment &nbsp;&nbsp;&nbsp; Series of 2', ''],
-                '💋' => ['$80 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $200', ''],
-                '<b>Skin Revitalization</b>' => ['Single Treatment &nbsp;&nbsp;&nbsp; Series of 3', ''],
-                '🧖‍♀️' => ['$120 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $300', ''],
-            ],
-            'images' => ['hairremoval.jpg']
-        ],
-        // ... Add more services as needed
+       'FULLSETS' => [
+    'fullsets',
+    "",
+    'Menu' => [
+        'Regular (Short & Square)' => ['$50+', '',],
+        'Any Other Shapes' => ['$55+', '',],
+        'White Tips' => ['$50+', '',],
+        'Full Set On Toenails' => ['$50+', '',],
+        'Full Set With Clear Pink Powder' => ['$50+', '',],
+        'Ombre/ Pink & White (Top Gel Included)' => ['',''], 
+        'Pink & White' => ['$65+', '',],
+        'Ombre' => ['$65+', '',],
+        'Nude Pink' => ['$60+', '',],
+        'Glow In The Dark' => ['$55+', '',],
+        'Gel X Full Set' => ['$60+', '',],
+        'SNS Organic Dipping Powder' => ['$45-$55',''],
+    ],
+    'images' => ['fullset.jpg']
+],
+'ADDITIONAL SERVICES' => [
+    'additional',
+    "",
+    'Menu' => [
+        'Regular Polish Change' => ['$15 - $21 (French)', '',],
+        'Gel Polish Change' => ['$25 - $31 (French)', '',],
+        'Color Change On Acrylic (Gel)' => ['$25', '',],
+        'Design 2 Fingers' => ['$8', '',],
+        'Repair' => ['$7+', '',],
+        'Cut Down' => ['$3', '',],
+        'Shape Changing' => ['$5', '',],
+        'Take Off Acrylic' => ['$15+', '',],
+        'French Tips' => ['$6', '',],
+        'Chrome Nails' => ['$15', '',],
+    ],
+    'images' => ['additional.jpg']
+],  
+'SPA PEDICURE' => [
+    'spa',
+    "",
+    'Menu' => [
+        'The Organic Diva' => ['$65', 'This package uses all organic ingredients. Give your feet and toes the LOVE they deserve. <br> Organic Sea-salt Rock <br> Callus Removal <br> Organic Sugar Scrubs <br> Praffin Wax <br> Organic Moisture Mask <br> Extended Massage with Hot Stones and Fresh Orange.',],
+        'The Deluxe' => ['$55', 'This Premium pedicure will give you more relaxation and care with paraffin wax. This warm heat therapy wil lhelp with sore joints, muscles and moisturizing skin. <br> Sea-salt Soak <br> Callus Removal <br> Sugar Scrubs <br> Paraffin Wax <br> Hot Stones Massage',],
+        'The Zens' => ['$45', 'Step it up and enjoy an enhanced version of our spa pedicure. Starts with basic pedicure and adding mask which are used to moisturize the skin <br> Moisturizer Mask <br> Callus Removal <br> Hot Stone Massage',],
+        'The Essential' => ['$33', 'Need Extra Work on Removing your callus? Add Callus Removal to this package. <br> Nails Trimming, shapiong and cuticle grooming. <br> Callus Removal <br> Massage & Warm Towels <br> Polish of your choice. ',],
+      
+    ],
+    'images' => ['spa.jpg']
+],   
+       
      ];
 
 

@@ -7,12 +7,13 @@
           <li class="promo">
               <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" class="banner_wrap"><img src="<?= $pop ?>"></a>
           </li> 
-           <li class="promo" style="background:#e771a3;">
-              <a href="https://zota.zbook.us/bellissima_booking/"class="banner_wrap"target="_blank" style="
+        <?php } ?>
+        <li class="promo" style="background:#e771a3;">
+              <a href="<?=$business_info['booking'];?>"class="banner_wrap"target="_blank" style="
               text-decoration:none;color:white;"><strong>BOOK NOW</strong></a>
           </li> 
-        <?php } ?>
         <!-- hide toggle -->
+       
         </ul>
     </div>
 </div>

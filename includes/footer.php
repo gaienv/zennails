@@ -22,7 +22,7 @@
         
     </footer>
      <div class="d-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center footer-copyright">
-            <p style="margin-bottom:0px;color:white;">© 2023 Copyright Westminsterocprinting</p>
+            <p style="margin-bottom:0px;color:white;">© <?php echo date('Y'); ?> | Copyright Westminsterocprinting</p>
         </div>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

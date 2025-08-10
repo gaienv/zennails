@@ -12,19 +12,60 @@
                         <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th style="font-size: 26px;font-family: 'Abhaya Libre', serif;">Service</th>
-                                            <th class="text-end" style="font-size: 23px;font-family: 'Abhaya Libre', serif;">Price</th>
-                                        </tr>
-                                    </thead>
+                                <thead>
+    <tr>
+        <th style="font-size: 26px;font-family: 'Abhaya Libre', serif;">Service</th>
+        <th class="text-end" style="font-size: 23px;font-family: 'Abhaya Libre', serif;">Cash</th>
+        <th class="text-end" style="font-size: 23px;font-family: 'Abhaya Libre', serif;">Card</th>
+    </tr>
+</thead>
                                     <tbody>
-                                    <?php foreach($info['Menu'] as $item => $details){ ?>
-                                        <tr>
-<td style="font-family: 'Advent Pro', sans-serif;"><strong><?= $item?></strong><br> <?= $details[1]?></td>
- <td class="text-end" style="font-family: Arimo, sans-serif;font-weight: bold;font-size: 18px;color: rgb(126,78,101);"><?= $details[0]?></td>
-                                        </tr>
-                                        <?php }?>
+                                    <?php foreach($info['Menu'] as $item => $details){ 
+    $priceText = trim($details[0]);
+    $cardPrice = '';
+
+    if ($priceText !== '') {
+        // Match range like "$45 - $55" or "45 - 55"
+        if (preg_match('/\$?\s*(\d+\.?\d*)\s*-\s*\$?\s*(\d+\.?\d*)/', $priceText, $matches)) {
+            $low = floatval($matches[1]);
+            $high = floatval($matches[2]);
+            $cardLow = $low * 1.025;
+            $cardHigh = $high * 1.025;
+
+            $plusSign = (strpos($priceText, '+') !== false) ? '+' : '';
+            $cardPrice = "$" . number_format($cardLow, 2) . " - $" . number_format($cardHigh, 2) . $plusSign;
+
+        } else {
+            // Single price
+            $cashNum = floatval(preg_replace('/[^0-9.]/', '', $priceText));
+
+            if ($cashNum > 0) {
+                $cardNum = $cashNum * 1.025;
+
+                $plusSign = (strpos($priceText, '+') !== false) ? '+' : '';
+                $cardPrice = "$" . number_format($cardNum, 2) . $plusSign;
+            }
+        }
+    }
+?>
+<tr>
+    <td style="font-family: 'Advent Pro', sans-serif;">
+        <strong><?= $item?></strong><br> <?= $details[1]?>
+    </td>
+    <td class="text-end" style="font-family: Arimo, sans-serif;font-weight: bold;font-size: 16px;color: rgb(126,78,101);">
+        <?= $priceText ?> <!-- Cash Price -->
+    </td>
+    <td class="text-end" style="font-family: Arimo, sans-serif;font-weight: bold;font-size: 16px;color: rgb(126,78,101);">
+        <?= $cardPrice ?> <!-- Card Price -->
+    </td>
+</tr>
+<?php } ?>
+
+
+
+
+
+
                                     </tbody>
                                 </table>
                             </div>

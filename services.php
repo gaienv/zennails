@@ -4,7 +4,8 @@
     <div class="container" style="padding-top: 84px;">
     <h1 style="text-align: center;padding-top: 22px;padding-bottom: 22px;color: var(--bs-pink);font-family: Aleo, serif;font-weight: bold;">OUR SERVICES</h1>
         <div class="row">
-        <div class="row gy-2 d-md-flex d-lg-flex d-xl-flex d-xxl-flex justify-content-md-center justify-content-lg-center justify-content-xl-center justify-content-xxl-center">     <?php foreach($services as $service => $info){ ?>
+        <div class="row gy-2 d-md-flex d-lg-flex d-xl-flex d-xxl-flex justify-content-md-center justify-content-lg-center justify-content-xl-center justify-content-xxl-center">   
+            <?php foreach($services as $service => $info){ ?>
             <div class="col-12 col-md-3 d-flex justify-content-center" style="padding-bottom: 47px;">
           
                 <div class="d-xxl-flex flex-column justify-content-xxl-center" style="width: 100%;min-width: 0px;max-width: 306px;"data-aos="fade-up" data-aos-delay="100">

@@ -73,14 +73,27 @@
                 </div>
             </div>
             <div class="row g-0 row-cols-4 row-cols-sm-1 row-cols-md-4 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-4 d-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center photos" data-bss-baguettebox="" style="width: 100%;overflow: visible;max-width: 1390px;">
-                <div class="col item" style="width: 332.663px;max-width: none;height: 332.663px;"><a href="assets/img/shutterstock_1693000966.jpg"><img class="img-fluid" data-aos="flip-up" data-aos-duration="400" data-aos-delay="400" src="assets/img/shutterstock_1693000966.jpg" style="width: 100%;height: 100%;max-width: none;object-fit:cover;object-position:center;"></a></div>
-                <div class="col item" style="width: 332.663px;max-width: none;height: 332.663px;"><a href="assets/img/shutterstock_1451856545.jpg"><img class="img-fluid" data-aos="flip-down" data-aos-duration="500" data-aos-delay="200" src="assets/img/shutterstock_1451856545.jpg" style="width: 100%;height: 100%;max-width: none;object-fit:cover;object-position:center;"></a></div>
-                <div class="col item" style="width: 332.663px;max-width: none;height: 332.663px;"><a href="assets/img/shutterstock_1716017281.jpg"><img class="img-fluid" data-aos="flip-up" data-aos-duration="400" data-aos-delay="400" src="assets/img/shutterstock_1716017281.jpg" style="width: 100%;height: 100%;max-width: none;object-fit:cover;object-position:center;"></a></div>
-                <div class="col item" style="width: 332.663px;max-width: none;height: 332.663px;"><a href="assets/img/shutterstock_1910301361.jpg"><img class="img-fluid" data-aos="flip-down" data-aos-duration="500" data-aos-delay="200" src="assets/img/shutterstock_1910301361.jpg" style="width: 100%;height: 100%;max-width: none;object-fit: cover;object-position: bottom;"></a></div>
-                <div class="col item" style="width: 332.663px;max-width: none;height: 332.663px;"><a href="assets/img/shutterstock_1692609214.jpg"><img class="img-fluid" data-aos="flip-down" data-aos-duration="500" data-aos-delay="200" src="assets/img/shutterstock_1692609214.jpg" style="width: 100%;height: 100%;max-width: none;object-fit:cover;object-position:center;"></a></div>
-                <div class="col item" style="width: 332.663px;max-width: none;height: 332.663px;"><a href="assets/img/shutterstock_1542789953.jpg"><img class="img-fluid" data-aos="flip-up" data-aos-duration="400" data-aos-delay="400" src="assets/img/shutterstock_1542789953.jpg" style="width: 100%;height: 100%;max-width: none;object-fit:cover;object-position:center;" width="247" height="247"></a></div>
-                <div class="col item" style="width: 332.663px;max-width: none;height: 332.663px;"><a href="assets/img/shutterstock_1808180704.jpg"><img class="img-fluid" data-aos="flip-down" data-aos-duration="500" data-aos-delay="200" src="assets/img/shutterstock_1808180704.jpg" style="width: 100%;height: 100%;max-width: none;object-fit:cover;object-position:center;"></a></div>
-                <div class="col item" style="width: 332.663px;max-width: none;height: 332.663px;"><a href="assets/img/shutterstock_1910301355.jpg"><img class="img-fluid" data-aos="flip-up" data-aos-duration="400" data-aos-delay="400" src="assets/img/shutterstock_1910301355.jpg" style="width: 100%;height: 100%;max-width: none;object-fit: cover;object-position: right;"></a></div>
+            <?php
+$gallery = glob('assets/img/gallery/*.*');
+$gallery = array_slice($gallery, 0, 8); // keep only first 8 files
+?>
+
+<?php foreach ($gallery as $index => $photo) { ?>
+    <div class="col item" style="width: 332.663px;max-width: none;height: 332.663px;">
+        <a href="<?php echo $photo; ?>">
+            <img 
+                class="img-fluid" 
+                data-aos="<?php echo $index % 2 === 0 ? 'flip-up' : 'flip-down'; ?>" 
+                data-aos-duration="<?php echo $index % 2 === 0 ? '400' : '500'; ?>" 
+                data-aos-delay="<?php echo $index % 2 === 0 ? '400' : '200'; ?>" 
+                src="<?php echo $photo; ?>" 
+                style="width: 100%;height: 100%;max-width: none;object-fit:cover;object-position:center;"
+            >
+        </a>
+    </div>
+<?php } ?>
+
+
             </div>
         </div>
     </section>
